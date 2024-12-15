@@ -1,6 +1,6 @@
 This is to convert markdown to HTML via a node.js server. 
 
-Follow the following instructions at your own risk. this is a successful project and worked for the author - but you may need to customize these next steps based on the unique setup of your system and your unique needs. 
+This is experimental and intended for use on an intranet with an Ubuntu server on LAN. Follow the following instructions at your own risk. This is a successful project for the author, but you may need to customize these next steps based on the unique setup of your system and your unique needs. 
 
 # **Markdown to HTML Converter**
 
