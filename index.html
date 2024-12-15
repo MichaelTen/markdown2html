@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Markdown to HTML</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <h1>Markdown to HTML Converter</h1>
+    
+    <!-- Input Markdown Text Area -->
+    <div>
+        <label for="markdownInput"><strong>Enter Markdown:</strong></label><br>
+        <textarea id="markdownInput" rows="10" cols="80" placeholder="Paste your Markdown text here..."></textarea>
+    </div>
+    
+    <!-- Button to Trigger Conversion -->
+    <div style="margin-top: 10px;">
+        <button onclick="convertMarkdown()">Convert to HTML</button>
+    </div>
+    
+    <!-- Output HTML Text Area -->
+    <div style="margin-top: 20px;">
+        <label for="htmlOutput"><strong>Generated HTML:</strong></label><br>
+        <textarea id="htmlOutput" rows="10" cols="80" readonly></textarea>
+    </div>
+    
+    <!-- Script to Convert Markdown to HTML -->
+    <script>
+        function convertMarkdown() {
+            // Get the Markdown input
+            const markdownText = document.getElementById('markdownInput').value;
+            
+            // Convert Markdown to HTML using marked.js
+            const htmlContent = marked.parse(markdownText);
+
+            // Display the HTML content in the output textarea
+            document.getElementById('htmlOutput').value = htmlContent;
+        }
+    </script>
+</body>
+</html>
